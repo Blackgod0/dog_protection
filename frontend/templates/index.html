@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DogHealthApp</title>
+    <link rel="stylesheet" href="/static/css/style.css" />
+  </head>
+  <body>
+    <div id="app" class="container">
+      <header>
+        <h1>🐾 DogHealthApp</h1>
+        <p class="subtitle">Profile & Personalized Recommendations</p>
+      </header>
+
+      <!-- Auth Section -->
+      <section id="auth" class="card">
+        <h2>Register / Login</h2>
+        <div class="row">
+          <input id="username" placeholder="Username" />
+          <input id="password" type="password" placeholder="Password" />
+        </div>
+        <div class="row buttons">
+          <button id="btnRegister" class="primary">Register</button>
+          <button id="btnLogin" class="primary">Login</button>
+          <button id="btnLogout" class="secondary">Logout</button>
+        </div>
+        <div id="authMsg" class="message"></div>
+      </section>
+
+      <!-- Dog Profile Section -->
+      <section id="profileForm" class="card" style="display:none;">
+        <h2>Create Dog Profile</h2>
+        <form id="dogForm">
+          <div class="row">
+            <input name="name" placeholder="Dog's Name" required />
+            <input name="breed" placeholder="Breed" required />
+          </div>
+          <div class="row">
+            <input name="age_years" placeholder="Age (years)" type="number" step="0.1" required />
+            <input name="gender" placeholder="Gender" required />
+          </div>
+          <div class="row">
+            <input name="weight_kg" placeholder="Weight (kg)" type="number" step="0.1" required />
+            <input name="height_cm" placeholder="Height (cm)" type="number" step="0.1" />
+          </div>
+          <div class="row">
+            <select name="activity_level">
+              <option value="low">Low</option>
+              <option value="moderate" selected>Moderate</option>
+              <option value="high">High</option>
+            </select>
+          </div>
+          <textarea name="current_diet" placeholder="Current Diet"></textarea>
+          <textarea name="exercise_routine" placeholder="Exercise Routine"></textarea>
+          <textarea name="health_history" placeholder="Health History / Concerns"></textarea>
+          <button type="submit" class="primary">Save Profile</button>
+        </form>
+        <div id="profileMsg" class="message"></div>
+      </section>
+
+      <!-- Recommendations Section -->
+      <section id="recommendations" class="card" style="display:none;">
+        <h2>Recommendations</h2>
+        <button id="btnGetRec" class="primary">Get Recommendations</button>
+        <pre id="recOutput"></pre>
+      </section>
+    </div>
+    <script src="/static/js/app.js"></script>
+  </body>
+</html>

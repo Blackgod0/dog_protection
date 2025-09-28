@@ -1,0 +1,104 @@
+/* General Reset & Layout */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f9f9f9;
+  margin: 0;
+  padding: 16px;
+  color: #333;
+}
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 4px;
+}
+.subtitle {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Card Style */
+.card {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Form Layout */
+.row {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+input, select, textarea {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  width: 100%;
+}
+textarea {
+  min-height: 60px;
+  resize: vertical;
+}
+
+/* Buttons */
+button {
+  cursor: pointer;
+  font-size: 0.95rem;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 16px;
+  transition: background 0.2s;
+}
+button.primary {
+  background-color: #4a90e2;
+  color: #fff;
+}
+button.primary:hover {
+  background-color: #357ab8;
+}
+button.secondary {
+  background-color: #aaa;
+  color: #fff;
+}
+button.secondary:hover {
+  background-color: #888;
+}
+.row.buttons {
+  margin-top: 8px;
+}
+
+/* Messages */
+.message {
+  margin-top: 8px;
+  color: #d9534f;
+  font-weight: 500;
+}
+
+/* Recommendations */
+pre {
+  background: #f0f4f8;
+  padding: 12px;
+  border-radius: 8px;
+  overflow-x: auto;
+  max-height: 400px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .row {
+    flex-direction: column;
+  }
+}

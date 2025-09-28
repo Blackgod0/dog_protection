@@ -1,0 +1,17 @@
+{
+  "Labrador Retriever": {
+    "min_kg": 25,
+    "max_kg": 36,
+    "notes": "High energy; needs protein-rich diet"
+  },
+  "Beagle": {
+    "min_kg": 9,
+    "max_kg": 14,
+    "notes": "Moderate energy; prone to obesity"
+  },
+  "German Shepherd": {
+    "min_kg": 22,
+    "max_kg": 40,
+    "notes": "Active; joint-care recommended for large breeds"
+  }
+}
